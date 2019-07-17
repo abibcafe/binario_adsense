@@ -34,6 +34,7 @@
     - [Thumbnail Image](#thumbnail-image)
     - [Footer Social Icons](#footer-social-icons)
     - [Web App Manifest](#web-app-manifest)
+    - [Google AdSense](#google-adsense)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -167,6 +168,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   linkedin = true
   vk = true
   pocket = true
+
+[Params.Adsense] # Google Adsense
+  #ads_id = "ca-pub-xxxxxxxxxxxxxxxx"
+  #ads_auto = true
+  #ads_slot_top = "xxxxxxxxxx"
+  #ads_slot_bot = "xxxxxxxxxx"
 
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/
@@ -306,6 +313,25 @@ After that, you can specify `[Params.Manifest]` parameters.
 *To verify that your manifest file is configured properly and works well, run Hugo server and open Chrome DevTools (Press F12 in Chrome) → Application → Manifest*
 
 *If you use Apache as a web server, you may have difficulty accessing files in the icons folder within your root dir. Check [Issue #4](https://github.com/Vimux/Binario/issues/4) for more information.*
+
+#### Google AdSense
+
+Google AdSense custom channel blocks are placed in index, single and list page. One at top and one at bottom. Define `ads_slot_top` and `ads_slot_bot` for top and bottom slot respectively.
+
+```toml
+[Params.Adsense] # Google Adsense
+  ads_id = "ca-pub-xxxxxxxxxxxxxxxx"
+  ads_slot_top = "xxxxxxxxxx"
+  ads_slot_bot = "xxxxxxxxxx"
+```
+
+To use Google auto ads, define `ads_auto`. Auto ads are placed in every pages as it is added in footer.
+
+```toml
+[Params.Adsense] # Google Adsense
+  ads_id = "ca-pub-xxxxxxxxxxxxxxxx"
+  ads_auto = true
+```
 
 ## Contributing
 

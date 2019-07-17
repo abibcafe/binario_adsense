@@ -1,6 +1,7 @@
 {{ define "main" }}
 	<main class="main">
 		<div class="single block">
+			<div>{{ partial "ads_top.html" . }}</div>
 			<article class="post">
 				{{- partial "post_thumbnail.html" (dict "page" .) }}
 				{{- partial "post_meta.html" (dict "dot" . "class" "mb") }}
@@ -14,6 +15,7 @@
 				</footer>
 				{{ end }}
 			</article>
+			<div>{{ partial "ads_bot.html" . }}</div>
 		</div>
 	</main>
 	{{ partial "authorbox.html" . }}

@@ -6,6 +6,7 @@
 			{{ with .Content }}<div class="page__content{{ if not $.Title }} page__content--notitle{{ end }}">{{ . }}</div>{{ end }}
 		</div>
 		{{- end }}
+		<div>{{ partial "ads_top.html" . }}</div>
 		<div class="cards">
 			{{ range .Paginator.Pages }}
 				<div class="card{{ if and (ge ($.Param "columns") 1) (le ($.Param "columns") 3) }} card--{{ $.Param "columns" }}col{{ else }} card--2col{{ end }}">
@@ -13,6 +14,7 @@
 				</div>
 			{{ end }}
 		</div>
+		<div>{{ partial "ads_bot.html" . }}</div>
 	</main>
 	{{ partial "pagination.html" . }}
 {{ end }}
