@@ -1,8 +1,16 @@
-# Binario
+# Binario with AdSense
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
-**[Demo (Fast update)](https://binario.netlify.com/)** | [Standart Demo](https://themes.gohugo.io/theme/binario/)
+This [repo](https://github.com/J-Siu/Binario) is a modified version of Binario with AdSense support. All design credit go to original author: [Vimux](https://github.com/Vimux/Binario).
+
+Demo with AdSense:
+
+**[JS Blog](https://johnsiu.com)**
+
+Original demo from Vimux (no AdSense):
+
+**[Demo (Fast update)](https://binario.netlify.com/)** | [Standard Demo](https://themes.gohugo.io/theme/binario/)
 
 ![Binario theme screenshot](https://github.com/vimux/binario/blob/master/images/tn.png)
 
