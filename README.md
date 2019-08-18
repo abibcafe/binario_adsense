@@ -16,6 +16,7 @@ Original demo from Vimux (no AdSense):
 
 **Features:**
 
+* AdSense support
 * Responsive
 * Card-based list layout
 * Color themes
