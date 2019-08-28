@@ -49,9 +49,12 @@ Original demo from Vimux (no AdSense):
 
 ## Installation
 
-*First of all, you will need to [install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and [create new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). Also, you have git installed on your machine and you are familiar with basic git usage. After that, you ready to install **Binario**.*
+*First of all, you will need to [install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
+[create new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). Also, you have git installed
+on your machine and you are familiar with basic git usage. After that, you ready to install **Binario**.*
 
-There are three different ways you can install **Binario**. Choose one of the installation methods listed below and follow the instructions.
+There are three different ways you can install **Binario**. Choose one of the installation methods listed below and
+follow the instructions.
 
 - **A**. [Git clone](#option-a-git-clone)
 - **B**. [Git submodule](#option-b-git-submodule)
@@ -87,11 +90,13 @@ Next, edit your `config.toml` configuration file and add parameter:
 theme = "binario"
 ```
 
-*You can [read the GitHub documentation for submodules](https://github.com/blog/2104-working-with-submodules) or those found on [Git's website](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information*
+*You can [read the GitHub documentation for submodules](https://github.com/blog/2104-working-with-submodules) or those
+found on [Git's website](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information*
 
 ### Option C. Download ZIP and manual install
 
-**[Download ZIP](https://github.com/vimux/binario/archive/master.zip)** and extract to the `themes/binario` within your Hugo website.
+**[Download ZIP](https://github.com/vimux/binario/archive/master.zip)** and extract to the `themes/binario` within your
+Hugo website.
 
 Next, edit your `config.toml` configuration file and add parameter:
 
@@ -109,11 +114,14 @@ hugo server
 
 Now you can go to [localhost:1313](http://localhost:1313) webpage and the Binario theme should be visible.
 
-After you make sure that **Binario** works, you may start customizing the theme if it's needed. You can change [number of columns](#columns), activate [footer social icons](#footer-social-icons), [share buttons](#share-buttons) and [much more](#configuration-options).
+After you make sure that **Binario** works, you may start customizing the theme if it's needed. You can change
+[number of columns](#columns), activate [footer social icons](#footer-social-icons), [share buttons](#share-buttons) and
+[much more](#configuration-options).
 
 ## Configuration
 
-Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the site root) as the default site config file. Here is Binario configuration example in TOML with all available theme-specific config params:
+Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the site root) as the default site config
+file. Here is Binario configuration example in TOML with all available theme-specific config params:
 
 ### Config.toml example
 
@@ -150,7 +158,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   related = true # Enable Related content for single pages
   relatedMax = 5 # Set the maximum number of posts that can be displayed in related block. Optional
   mathjax = true # Enable MathJax for all site pages
-  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path. Optional
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
@@ -209,7 +217,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   home = ["HTML", "RSS", "MANIFEST"]
 ```
 
-For more information about Hugo configuration files and all common configuration settings, please read "[Configure Hugo](https://gohugo.io/getting-started/configuration)" from Hugo official documentation.
+For more information about Hugo configuration files and all common configuration settings, please read
+"[Configure Hugo](https://gohugo.io/getting-started/configuration)" from Hugo official documentation.
 
 ### Front Matter example
 
@@ -239,7 +248,8 @@ related: true # Enable/disable Related content for specific post
 ---
 ```
 
-For more information about front matter variables and formats read "[Hugo Front Matter](https://gohugo.io/content-management/front-matter)" from Hugo official documentation.
+For more information about front matter variables and formats read
+"[Hugo Front Matter](https://gohugo.io/content-management/front-matter)" from Hugo official documentation.
 
 ### Configuration options
 
@@ -247,18 +257,22 @@ Binario includes some customizable configuration options that may be useful.
 
 #### Columns
 
-By default, Binario works with two columns card layout (if it possible by screen size) for list pages, but you can also use one or three columns layout. Change `Params.columns`to preferable value (from 1 to 3). You can also change this option for specific list pages in frontmatter params.
+By default, Binario works with two columns card layout (if it possible by screen size) for list pages, but you can also
+use one or three columns layout. Change `Params.columns`to preferable value (from 1 to 3). You can also change this
+option for specific list pages in frontmatter params.
 
 #### Custom CSS
 
-If you want to include custom CSS files, you need to assign an array of references in site config file (`config.toml` by default) like following:
+If you want to include custom CSS files, you need to assign an array of references in site config file
+(`config.toml` by default) like following:
 
 ```toml
 [Params]
   customCSS = ["css/custom.css"]
 ```
 
-Of course, you can reference as many CSS files as you want. Their paths need to be relative to the `static` folder of your Hugo site:
+Of course, you can reference as many CSS files as you want. Their paths need to be relative to the `static` folder of
+your Hugo site:
 
 ```toml
 [Params]
@@ -273,7 +287,8 @@ You may activate post meta fields with `.Site.Params.post_meta` parameter.
 
 #### Related Content
 
-Binario uses default Related Content Hugo feature to provide "See Also"-like section. You can activate "Related Content" section with `.Site.Params.related` parameter.
+Binario uses default Related Content Hugo feature to provide "See Also"-like section. You can activate "Related Content"
+section with `.Site.Params.related` parameter.
 
 More information available at [Hugo Related Content](https://gohugo.io/content-management/front-matter)
 
@@ -285,19 +300,25 @@ Available share buttons: Facebook, Twitter, Reddit, Telegram, LinkedIn, VK, Pock
 
 #### Thumbnail Image
 
-You can add thumbnail image to your content page. Just put `thumbnail.*` image file in [page bundle](https://gohugo.io/content-management/page-bundles/).
+You can add thumbnail image to your content page. Just put `thumbnail.*` image file in
+[page bundle](https://gohugo.io/content-management/page-bundles/).
 
 #### Footer Social Icons
 
-With Binario, you have the option to display social icons in the footer. To display them, set up `[Params.Social]` specific parameters in your site config file.
+With Binario, you have the option to display social icons in the footer. To display them, set up `[Params.Social]`
+specific parameters in your site config file.
 
-Available social services: Email, Facebook, Twitter, Telegram, Instagram, Pinterest, VK, LinkedIn, GitHub, GitLab, Stack Overflow, Mastodon, Medium
+Available social services: Email, Facebook, Twitter, Telegram, Instagram, Pinterest, VK, LinkedIn, GitHub, GitLab,
+Stack Overflow, Mastodon, Medium
 
 #### Web App Manifest
 
-[Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) is a simple json file with basic site info like name, description, icons, etc. This file tells the browser about your web application and how it should behave when "installed" (as PWA) on the users mobile device or desktop.
+[Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/) is a simple json file with basic
+site info like name, description, icons, etc. This file tells the browser about your web application and how it should
+behave when "installed" (as PWA) on the users mobile device or desktop.
 
-To activate Web App Manifest you need to define `MANIFEST` custom output format & specify `[Params.Manifest]` parameters in your site config file.
+To activate Web App Manifest you need to define `MANIFEST` custom output format & specify `[Params.Manifest]` parameters
+in your site config file.
 
 First of all, you should define `MANIFEST` custom output format [`config.toml`]:
 
@@ -319,9 +340,11 @@ Then, include `MANIFEST` output format for `home` Kind attribute [`config.toml`]
 
 After that, you can specify `[Params.Manifest]` parameters.
 
-*To verify that your manifest file is configured properly and works well, run Hugo server and open Chrome DevTools (Press F12 in Chrome) → Application → Manifest*
+*To verify that your manifest file is configured properly and works well, run Hugo server and open
+Chrome DevTools (Press F12 in Chrome) → Application → Manifest*
 
-*If you use Apache as a web server, you may have difficulty accessing files in the icons folder within your root dir. Check [Issue #4](https://github.com/Vimux/Binario/issues/4) for more information.*
+*If you use Apache as a web server, you may have difficulty accessing files in the icons folder within your root dir.
+Check [Issue #4](https://github.com/Vimux/Binario/issues/4) for more information.*
 
 #### Google AdSense
 
@@ -346,11 +369,13 @@ To use Google auto ads, define `ads_auto`. Auto ads are placed in every pages as
 
 Have a bug? [Please open a new issue](https://github.com/vimux/binario/issues/new).
 
-Pull requests are very welcome too, but please make sure they match the existing [contributing guide](https://github.com/vimux/binario/blob/master/CONTRIBUTING.md).
+Pull requests are very welcome too, but please make sure they match the existing
+[contributing guide](https://github.com/vimux/binario/blob/master/CONTRIBUTING.md).
 
 ## License
 
 Binario is licensed under the [MIT License](https://github.com/vimux/binario/blob/master/LICENSE).
 
 * Social media icons based on [SuperTinyIcons](https://github.com/edent/SuperTinyIcons) [MIT]
-* CSS Reset based on [Bootstrap Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-reboot.css) [MIT]
+* CSS Reset based on [Bootstrap Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-reboot.css)
+[MIT]
