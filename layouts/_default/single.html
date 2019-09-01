@@ -1,6 +1,8 @@
 {{ define "main" }}
 	<main class="main">
+		{{if .Site.Params.Adsense.ads_slot_top}}
 		<div class="page block">{{ partial "ads_top.html" . }}</div>
+		{{end}}
 		<div class="single block">
 			<article class="post">
 				{{- partial "post_thumbnail.html" (dict "page" .) }}
@@ -16,7 +18,9 @@
 				{{ end }}
 			</article>
 		</div>
+		{{ if .Site.Params.Adsense.ads_slot_bot }}
 		<div class="page block">{{ partial "ads_bot.html" . }}</div>
+		{{end}}
 	</main>
 	{{ partial "authorbox.html" . }}
 	{{ partial "related.html" . }}
