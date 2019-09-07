@@ -187,6 +187,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   linkedin = true
   vk = true
   pocket = true
+  pinterest = true
 
 [Params.Adsense] # Google Adsense
   #ads_id = "ca-pub-xxxxxxxxxxxxxxxx"
