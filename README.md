@@ -2,7 +2,7 @@
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
-This [repo](https://github.com/J-Siu/Binario) is a fork of [Binario original](https://github.com/Vimux/Binario) with AdSense support. All credit go to original author: [Vimux](https://github.com/Vimux/Binario).
+This [repo](https://github.com/J-Siu/Binario) is a fork of [Binario original](https://github.com/Vimux/Binario) with AdSense support. All credit go to original author: [Vimux](https://github.com/Vimux/Binario). Customized the footer a little bit.
 
 Demo with AdSense:
 
