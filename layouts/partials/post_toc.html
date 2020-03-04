@@ -1,6 +1,9 @@
 {{ if .Param "toc" }}
-<details class="post__toc toc" open>
-	<summary class="toc__title">{{- T "post_toc" -}}</summary>
+<div class="post__toc toc">
+<!--<details class="post__toc toc" open>-->
+	<summary class="toc__title">{{ partial "share_buttons.html" . }}</summary>
+	<!--summary class="toc__title">{{- T "post_toc" -}}</summary-->
 	{{ .TableOfContents }}
-</details>
+<!--</details>-->
+</div>
 {{ end }}
